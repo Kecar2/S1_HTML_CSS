@@ -1,4 +1,4 @@
-# S1_HTML_CSS
+# Sprint 1. HTML I CSS
 
 La maquetació web consisteix a transformar el disseny d'una web en un conjunt d'arxius HTML i CSS, perquè d'aquesta manera,  els navegadors web puguin interpretar-los i reproduir-los correctament en diferents dispositius.
 
