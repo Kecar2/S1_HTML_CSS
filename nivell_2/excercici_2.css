@@ -4,52 +4,52 @@
     padding: 1%;
 }
 
-.greybox{
+.greybox {
     background-color: grey;
     padding: 2%;
     margin: 1%;
     display: flex;
 }
 
-.orangebox{
+.orangebox {
     background-color: orange;
     padding: 2%;
     margin: 1%;
     display: flex;
 }
 
-.d1{
-    background-color:red;
+.d1 {
+    background-color: red;
     margin: 1%;
     flex-grow: 1;
 }
 
-.d2{
-    background-color:red;
+.d2 {
+    background-color: red;
     margin: 1%;
     flex-grow: 4;
 }
 
-.d3{
+.d3 {
     background-color: yellow;
     margin: 1%;
     flex-grow: 4;
 }
 
-h3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondcontainer {
-    background-color: black;
+    background-color: yellow;
     margin: 25px;
     padding: 1%;
     display: flex;
 }
 
-.bluegreybox{
+.bluegreybox {
     background-color: grey;
     padding: 2%;
     margin: 1%;
@@ -57,8 +57,8 @@ h3{
     display: flex;
 }
 
-.redbox{
-    background-color:red;
+.redbox {
+    background-color: red;
     padding: 2%;
     margin: 1%;
     display: flex;
@@ -66,7 +66,7 @@ h3{
     flex-direction: column;
 }
 
-.bluebox1{
+.bluebox1 {
     background-color: cyan;
     padding: 2%;
     margin: 1%;
@@ -74,42 +74,50 @@ h3{
     display: flex;
 }
 
-.cyanbox1{
+.cyanbox1 {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
 }
 
-.cyanbox2{
+.cyanbox2 {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
 }
 
 
-.yellowbox1{
+.yellowbox1 {
     background-color: yellow;
     margin: 1%;
     flex-grow: 4;
     display: flex;
 }
 
-.cyanlarge{
+.cyanlarge {
     background-color: blue;
     display: flex;
     margin: 1%;
 }
 
-.footer{
+.footer {
     background-color: black;
     padding: 1%;
     margin: 25px;
-    display: flex; 
+    display: flex;
 }
 
-.footerorange{
+.footerorange {
     background-color: yellow;
     display: flex;
     margin: 1%;
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .secondcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 }
