@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/* Parte 1 */
+
 #box-1 {
     border: 1rem solid black;
 }
@@ -54,6 +56,8 @@
     padding: 0.5rem;
 }
 
+/* Parte 2 */
+
 #box-2 {
     border: 1rem solid black;
     margin-top: 1rem;
@@ -64,8 +68,8 @@
 @media (max-width: 768px) {
     #box-2 {
         flex-direction: column;
-        border-color: turquoise;
-        background-color: turquoise;
+        border-color: rgb(208, 255, 0);
+        background-color: rgb(208, 255, 0);
     }
 }
 
@@ -147,6 +151,8 @@
 .right-2 div:last-child {
     margin: 0 1rem 1rem 1rem;
 }
+
+/* Parte 3 */
 
 #box-3 {
     border: 1rem solid black;

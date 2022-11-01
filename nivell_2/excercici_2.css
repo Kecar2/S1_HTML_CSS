@@ -1,123 +1,315 @@
-.firstcontainer {
-    background-color: black;
-    margin: 25px;
-    padding: 1%;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+:root {
+  --font-main: "Source Sans Pro", monospace;
+
+  --clr-primary: #636363;
+  --clr-secondary: #d8d7d7;
+  --clr-secondary-light: #f5f1f1;
+  --clr-accent: #ee7463;
+  --clr-accent-2: #f08080;
 }
 
-.greybox {
-    background-color: grey;
-    padding: 2%;
-    margin: 1%;
-    display: flex;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 7em;
 }
 
-.orangebox {
-    background-color: orange;
-    padding: 2%;
-    margin: 1%;
-    display: flex;
+html {
+  font-family: var(--font-main);
 }
 
-.d1 {
-    background-color: red;
-    margin: 1%;
-    flex-grow: 1;
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.d2 {
-    background-color: red;
-    margin: 1%;
-    flex-grow: 4;
+/* HEADER STYLING SECTION */
+
+#header {
+  background: url("./images/header1.jpg") center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  animation: slideBg 30s ease-in-out infinite;
 }
 
-.d3 {
-    background-color: yellow;
-    margin: 1%;
-    flex-grow: 4;
+@keyframes slideBg {
+  0%,
+  100% {
+    background: url("./images/header1.jpg") center/cover no-repeat;
+  }
+
+  50% {
+    background: url("./images/header2.jpg") center/cover no-repeat;
+  }
 }
 
-h3 {
-    display: flex;
-    justify-content: center;
+#navbar {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.logo-div {
+  width: 20%;
+  text-align: center;
+}
+
+.logo-div img {
+  width: 70px;
+  animation: blink 4s ease-in-out 2s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.1;
+    transform: translateY(-10px);
+  }
+}
+
+.links-div {
+  width: 80%;
+}
+
+.ul-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.li-links a {
+  text-decoration: none;
+  color: var(--clr-accent-2);
+  transition: all 0.3s ease-in;
+}
+
+.li-links a:hover {
+  color: var(--clr-primary);
+}
+
+.icons {
+  margin-right: 0.3rem;
+}
+
+.social-div {
+  width: 20%;
+}
+
+.ul-social {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cta h1 {
+  color: var(--clr-accent);
+  opacity: 0.6;
+  font-size: 2.8rem;
+  font-family: serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 1rem 0 8rem 0;
+}
+
+/*------ END HEADER STYLING SECTION ------*/
+
+/*------ MAIN SECTION ------*/
+main {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.content-section {
+  width: 80%;
+  background-color: var(--clr-secondary);
+  margin-right: 1rem;
+}
+
+aside {
+  width: 20%;
+  background-color: var(--clr-secondary);
+  text-align: center;
+  padding: 2rem;
+}
+
+aside h3 {
+  padding-bottom: 2rem;
+}
+
+.content-row {
+  display: flex;
+}
+
+.blog-post {
+  width: 50%;
+  padding: 0.7rem;
+}
+
+.post-container {
+  padding: 0.5rem;
+  background-color: var(--clr-secondary-light);
+}
+
+.post-container h4 {
+  color: white;
+  background-color: var(--clr-accent-2);
+  margin-top: 0.2rem;
+  padding: 0.8rem 0 0.1rem 0.2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.post-container a {
+  display: block;
+  padding-top: 2rem;
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.post-container a:hover {
+  color: var(--clr-accent-2);
+}
+
+.blog-img {
+  height: 250px;
+  position: relative;
+}
+
+.post-date {
+  color: rgb(255, 255, 146);
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.2rem;
+}
+
+.blog-content {
+  padding: 0.4rem 0 0.1rem 0.2rem;
+  column-count: 2;
+  color: rgb(99, 99, 99);
+  font-size: 1.1rem;
+}
+
+.extra-info {
+  text-align: center;
+  padding: 0.8rem;
+  font-weight: 600;
+}
+
+/*------ END OF MAIN SECTION ------*/
+
+/*------ FOOTER SECTION ------*/
+
+footer {
+  background-color: var(--clr-secondary);
+  margin: 1rem 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: var(--clr-secondary-light);
+  padding: 1rem 0;
+  margin: 0 0.7rem;
+}
+
+/*------ END OF FOOTER SECTION ------*/
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  body {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content-section {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .content-row {
+    flex-direction: column;
+  }
+
+  .blog-post {
+    width: 100%;
+  }
+}
+
+@media (max-width: 868px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  .logo-div {
+    width: 100%;
+  }
+
+  .social-div {
+    position: absolute;
+    top: 1;
+    right: 0;
+  }
+
+  .cta h1 {
+    font-size: 2.4rem;
+    padding: 1rem 0 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .ul-container {
+    flex-direction: column;
     align-items: center;
+  }
+
+  .li-links {
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-content {
+    column-count: 1;
+  }
 }
 
-.secondcontainer {
-    background-color: yellow;
-    margin: 25px;
-    padding: 1%;
-    display: flex;
+@media (max-width: 400px) {
+  .cta h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0 4rem 0;
+  }
 }
-
-.bluegreybox {
-    background-color: grey;
-    padding: 2%;
-    margin: 1%;
-    width: 60%;
-    display: flex;
-}
-
-.redbox {
-    background-color: red;
-    padding: 2%;
-    margin: 1%;
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-}
-
-.bluebox1 {
-    background-color: cyan;
-    padding: 2%;
-    margin: 1%;
-    width: 50%;
-    display: flex;
-}
-
-.cyanbox1 {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-}
-
-.cyanbox2 {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-}
-
-
-.yellowbox1 {
-    background-color: yellow;
-    margin: 1%;
-    flex-grow: 4;
-    display: flex;
-}
-
-.cyanlarge {
-    background-color: blue;
-    display: flex;
-    margin: 1%;
-}
-
-.footer {
-    background-color: black;
-    padding: 1%;
-    margin: 25px;
-    display: flex;
-}
-
-.footerorange {
-    background-color: yellow;
-    display: flex;
-    margin: 1%;
-    flex-grow: 1;
-}
-
-@media only screen and (max-width: 600px) {
-    .secondcontainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+@media (max-width: 300px) {
+  .cta h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0 2rem 0;
+  }
 }
