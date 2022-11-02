@@ -33,10 +33,8 @@ ul {
   list-style: none;
 }
 
-/* HEADER STYLING SECTION */
-
 #header {
-  background: url("./images/header1.jpg") center/cover no-repeat;
+  background: url("./images/header.jpg") center/cover no-repeat;
   height: 60vh;
   position: relative;
   animation: slideBg 30s ease-in-out infinite;
@@ -45,11 +43,11 @@ ul {
 @keyframes slideBg {
   0%,
   100% {
-    background: url("./images/header1.jpg") center/cover no-repeat;
+    background: url("./images/header.jpg") center/cover no-repeat;
   }
 
   50% {
-    background: url("./images/header2.jpg") center/cover no-repeat;
+    background: url("./images/header.jpg") center/cover no-repeat;
   }
 }
 
@@ -129,9 +127,6 @@ ul {
   padding: 1rem 0 8rem 0;
 }
 
-/*------ END HEADER STYLING SECTION ------*/
-
-/*------ MAIN SECTION ------*/
 main {
   margin-top: 1rem;
   display: flex;
@@ -214,10 +209,6 @@ aside h3 {
   font-weight: 600;
 }
 
-/*------ END OF MAIN SECTION ------*/
-
-/*------ FOOTER SECTION ------*/
-
 footer {
   background-color: var(--clr-secondary);
   margin: 1rem 0;
@@ -230,10 +221,6 @@ footer p {
   padding: 1rem 0;
   margin: 0 0.7rem;
 }
-
-/*------ END OF FOOTER SECTION ------*/
-
-/* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
   body {
